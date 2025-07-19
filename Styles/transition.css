@@ -1,0 +1,18 @@
+body{
+    margin-left: 100px;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    border: 2px solid tomato;
+    background-color: peachpuff;
+    /* transition: width 5s linear 1s, background-color 5s ease in; */
+    transition: transform 3s 1s;
+}
+
+.box:hover{
+    transform: rotate(45deg) scale(1.5) translateX(150px);
+    /* width: 400px;
+    background-color: red; */
+}
