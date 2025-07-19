@@ -3,6 +3,10 @@ body{
     
 }
 
+p{
+    margin-bottom: 50px;
+}
+
 .container1{
     height: 200px;
     width: 200px;
@@ -30,10 +34,13 @@ body{
     border: 3px solid blue;
     background-color: beige;
     /* transform: scale(0.25, 0.5); */
-    /* transform: scale(0.5) rotate(-45deg) translateX(100px); */
-    transform: translateX(100px);
-    
-    
+    /* transform: scale(0.5) rotate(-45deg) translateX(-100px) translateY(100px); */
+    /* transform: translateX(100px); */
+    /* transform: scale(0.5); */    
+}
+
+.inner2:hover{
+    transform: scale(0.5) rotate(-45deg) translateX(-100px) translateY(100px);
 }
 .transform-1{
     display: flex;
