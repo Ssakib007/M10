@@ -1,0 +1,54 @@
+body{
+    margin-left: 500px;
+}
+
+@keyframes ping-pong {
+    from{
+        left: 0;
+    }
+    to{
+        left: 600px;
+        background-color: black;
+    }
+}
+
+@keyframes bounce {
+    0%{
+        left: 0px;
+        top: 0px;
+
+    }
+    25%{
+        left: 150px;
+        top: 200px;
+        background-color: yellow;
+    }
+    50%{
+        left: 300px;
+        top: 0px;
+        background-color: green;
+
+    }
+    100%{
+        left: 500px;
+        top: 200px;
+        background-color: blue;
+
+    }
+}
+
+.stage{
+    height: 300px;
+    width: 600px;
+    border: 2px solid steelblue;
+    background-color: azure;
+}
+.ball{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: brown;
+    position: relative;
+    /* animation: ping-pong 2s ease-in-out 1s infinite alternate ; */
+    animation: bounce 3s ease-in-out 1s infinite alternate ;
+}
